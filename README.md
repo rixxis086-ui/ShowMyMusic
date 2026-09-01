@@ -137,7 +137,7 @@ ShowMyMusic/
 
 ## 🤝 Contributing
 
-Contributions, issues, and feature requests are welcome!
+Contributions, issues, and feature requests are welcome🦛!
 Feel free to check the [issues page](https://github.com/rixxis086-ui/ShowMyMusic/issues).
 
 ---
