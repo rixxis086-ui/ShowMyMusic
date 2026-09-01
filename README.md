@@ -1,4 +1,4 @@
-﻿<div align="center">
+<img width="63" height="45" alt="{7DDD5E04-F3F9-42B3-B2A5-498DFEBBD41D}" src="https://github.com/user-attachments/assets/a9d4bd58-4b02-4605-8d15-a0f1ba3de338" />﻿<div align="center">
 
 # 🎵 ShowMyMusic
 
@@ -23,7 +23,7 @@
 
 </div>
 
-## 🌟 Overview
+## 🦛 Overview
 
 **ShowMyMusic** is a lightweight, ultra-sleek desktop overlay for Windows that seamlessly displays your active playing track, high-resolution album artwork, live synchronized timeline, and media controls right over any application or full-screen game.
 
@@ -61,7 +61,6 @@
 | 🍏 **iOS Liquid Glass** | Frosted Glass | Apple-inspired translucent blur with specular highlight glaze | ✅ Active |
 | ⬛ **Dynamic Island OLED** | Pure OLED Black | Pitch-black pill aesthetic with smooth curvature | ✅ Subtle |
 | 🪟 **Windows 11 Acrylic** | Fluent Acrylic | Modern Windows 11 acrylic gradient with delicate border edges | ➖ Off |
-| ⚡ **Cyberpunk Neon** | Dark Glass | High-voltage neon halo glow with vivid high-contrast border | ✅ Intense |
 | ❄️ **Apple Light Frosted** | Light Frosted | Bright frosted glass with specular shine and dark typography | ✅ Soft |
 | 🎯 **Minimalist Matte** | Solid Matte | Clean, distraction-free matte surface without glow | ➖ Off |
 
@@ -75,7 +74,7 @@ ShowMyMusic communicates directly with the Windows Media Session API, ensuring o
 - 🔴 **Apple Music** for Windows
 - 🟡 **Yandex Music**
 - 🌐 **Web Browsers**: Google Chrome, Microsoft Edge, Mozilla Firefox, Opera, Brave, Vivaldi
-- 🎬 **Local Media Players**: VLC, AIMP, MPC-HC, Windows Media Player
+- 🦛 **Local Media Players**: VLC, AIMP, MPC-HC, Windows Media Player
 - 💬 **Telegram Desktop** & Discord media streams
 
 ---
