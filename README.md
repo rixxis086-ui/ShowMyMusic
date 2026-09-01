@@ -27,13 +27,6 @@
 
 **ShowMyMusic** is a lightweight, ultra-sleek desktop overlay for Windows that seamlessly displays your active playing track, high-resolution album artwork, live synchronized timeline, and media controls right over any application or full-screen game.
 
-```
-  ┌────────────────────────────────────────────────────────────────────────┐
-  │  [ 💿 Artwork ]  Song Title • Artist Name                 🔊 80% [ ⏸ ] │
-  │                  01:24 ━━━━━━━━━━━━━━━━●─────────── 03:45              │
-  └────────────────────────────────────────────────────────────────────────┘
-```
-
 ---
 
 ## ✨ Key Features
@@ -146,12 +139,6 @@ ShowMyMusic/
 
 Contributions, issues, and feature requests are welcome!
 Feel free to check the [issues page](https://github.com/rixxis086-ui/ShowMyMusic/issues).
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'feat: Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
 
 ---
 
