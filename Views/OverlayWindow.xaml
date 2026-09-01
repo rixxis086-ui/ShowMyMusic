@@ -1,0 +1,31 @@
+﻿<Window x:Class="ShowMyMusic.Views.OverlayWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:controls="clr-namespace:ShowMyMusic.Views.Controls"
+        mc:Ignorable="d"
+        Title="ShowMyMusic Overlay" 
+        WindowStyle="None" 
+        AllowsTransparency="True" 
+        Background="Transparent" 
+        Topmost="True" 
+        ShowInTaskbar="False"
+        ResizeMode="NoResize"
+        SizeToContent="WidthAndHeight">
+    <Grid x:Name="OverlayContainer" 
+          Margin="30"
+          MouseEnter="OverlayContainer_MouseEnter" 
+          MouseLeave="OverlayContainer_MouseLeave"
+          MouseLeftButtonDown="OverlayContainer_MouseLeftButtonDown">
+        
+        <controls:MusicCardControl x:Name="MusicCard"
+                                   Track="{Binding Track}"
+                                   Settings="{Binding Settings}"
+                                   TogglePlayPauseCommand="{Binding TogglePlayPauseCommand}"
+                                   SkipNextCommand="{Binding SkipNextCommand}"
+                                   SkipPreviousCommand="{Binding SkipPreviousCommand}"
+                                   Width="{Binding Settings.CardWidth}"
+                                   Height="{Binding Settings.CardHeight}"/>
+    </Grid>
+</Window>

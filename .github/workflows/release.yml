@@ -1,0 +1,49 @@
+﻿name: Release Build
+
+on:
+  push:
+    tags:
+      - 'v*'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build-and-release:
+    runs-on: windows-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup .NET 8.0 SDK
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '8.0.x'
+
+      - name: Restore dependencies
+        run: dotnet restore
+
+      - name: Publish Windows x64 Release
+        run: |
+          dotnet publish ShowMyMusic.csproj -c Release -r win-x64 --self-contained false -o publish/ShowMyMusic-win-x64
+
+      - name: Create ZIP Archive
+        shell: pwsh
+        run: |
+          Compress-Archive -Path "publish/ShowMyMusic-win-x64/*" -DestinationPath "ShowMyMusic-win-x64.zip" -Force
+
+      - name: Create GitHub Release & Upload Assets
+        uses: softprops/action-gh-release@v2
+        if: startsWith(github.ref, 'refs/tags/')
+        with:
+          name: "ShowMyMusic ${{ github.ref_name }}"
+          body_path: RELEASE_NOTES.md
+          draft: false
+          prerelease: false
+          files: |
+            ShowMyMusic-win-x64.zip
+            publish/ShowMyMusic-win-x64/ShowMyMusic.exe
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

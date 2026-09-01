@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows10.0.22621.0</TargetFramework>
+    <TargetPlatformMinVersion>10.0.17763.0</TargetPlatformMinVersion>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+    <UseWindowsForms>false</UseWindowsForms>
+    <RootNamespace>ShowMyMusic</RootNamespace>
+    <AssemblyName>ShowMyMusic</AssemblyName>
+    <LangVersion>latest</LangVersion>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    
+    <!-- Version & Release Metadata -->
+    <Version>1.0.0</Version>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <FileVersion>1.0.0.0</FileVersion>
+    <Product>ShowMyMusic</Product>
+    <Authors>ShowMyMusic Contributors</Authors>
+    <Company>ShowMyMusic</Company>
+    <Description>Next-generation music overlay for Windows 10/11 inspired by iOS Dynamic Island and macOS Liquid Glass.</Description>
+    <Copyright>Copyright © 2026 ShowMyMusic</Copyright>
+    <PackageProjectUrl>https://github.com/rixxis086-ui/ShowMyMusic</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/rixxis086-ui/ShowMyMusic</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+  </PropertyGroup>
+
+</Project>
